@@ -1,0 +1,23 @@
+{
+  "Algeria": {
+    "Canada": "Visa required",
+    "France": "Visa required",
+    "Turkey": "Visa not required (up to 90 days)",
+    "United States": "Visa required"
+  },
+  "France": {
+    "Algeria": "Visa required",
+    "Canada": "Visa not required (for 90 days)",
+    "United States": "Visa not required (for 90 days)"
+  },
+  "United States": {
+    "Algeria": "Visa required",
+    "Canada": "Visa not required",
+    "France": "Visa not required"
+  },
+  "Turkey": {
+    "Algeria": "Visa not required (up to 90 days)",
+    "France": "Visa not required",
+    "United States": "Visa required"
+  }
+}

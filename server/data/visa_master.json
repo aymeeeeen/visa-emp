@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "version": "0.1",
+    "lastUpdated": "2025-08-25",
+    "verified": false,
+    "notes": "Initial structured dataset. Verify every entry against official consular websites before production."
+  },
+  "destinations": [
+    {
+      "country": "Canada",
+      "iso": "CAN",
+      "flag": "🇨🇦",
+      "sources": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship.html"
+      ],
+      "visas": {
+        "visitor": {
+          "description": "Temporary Resident Visa (TRV) required for many nationalities; some passport holders require an eTA instead of a visa when arriving by air.",
+          "documents": [
+            "Valid passport",
+            "Completed application forms",
+            "Travel itinerary / return ticket",
+            "Proof of funds",
+            "Invitation letter (if applicable)"
+          ],
+          "processingTime": "Varies (commonly 2–8 weeks)",
+          "cost": "CAD 100 (TRV) / CAD 7 (eTA)",
+          "financialRequirement": "Sufficient funds to cover stay (varies by case)",
+          "notes": "Some nationals (e.g., French) use eTA when arriving by air. Biometrics may be required."
+        },
+        "student": {
+          "description": "Study permit required for most programs longer than 6 months.",
+          "documents": [
+            "Valid passport",
+            "Letter of acceptance (DLI)",
+            "Proof of financial support (tuition + living)",
+            "Completed application forms",
+            "Biometrics / medical exam (if required)"
+          ],
+          "processingTime": "6–12+ weeks (varies by country & intake)",
+          "cost": "CAD 150 (study permit fee) + biometrics fees",
+          "financialRequirement": "Proof as per IRCC (tuition + living costs)",
+          "notes": "Some applicants may also need a TRV or eTA."
+        },
+        "work": {
+          "description": "Work permit usually required (employer-specific or open permit).",
+          "documents": [
+            "Valid passport",
+            "Job offer letter",
+            "Labour Market Impact Assessment (LMIA) if required",
+            "Completed application forms",
+            "Proof of qualifications"
+          ],
+          "processingTime": "6–12+ weeks (varies)",
+          "cost": "CAD 155 (work permit) + possible fees",
+          "financialRequirement": "Proof you can support yourself until receiving income",
+          "notes": "Employer obligations and LMIA rules apply for many streams."
+        }
+      },
+      "nationalityAdjustments": {
+        "France": {
+          "visitor": {
+            "description": "French citizens are visa-exempt for short visits; eTA required when arriving by air.",
+            "processingTime": "Minutes to a few days for eTA",
+            "cost": "CAD 7 (eTA)",
+            "notes": "Typically visa-exempt for stays up to 6 months. eTA is not a visa."
+          }
+        },
+        "Algeria": {
+          "visitor": {
+            "description": "TRV (Temporary Resident Visa) required for Algerian passport holders.",
+            "processingTime": "Varies (commonly weeks)",
+            "cost": "CAD 100 + biometrics when required",
+            "notes": "Additional documents (police cert, biometrics) commonly required."
+          }
+        },
+        "Tunisia": {
+          "visitor": {
+            "description": "TRV required for Tunisian passport holders.",
+            "processingTime": "Varies (commonly weeks)",
+            "cost": "CAD 100",
+            "notes": "Check IRCC VAC guidance for local document list."
+          }
+        },
+        "Morocco": {
+          "visitor": {
+            "description": "TRV required for Moroccan passport holders (unless special exemptions).",
+            "processingTime": "Varies",
+            "cost": "CAD 100",
+            "notes": "Local VAC procedures apply."
+          }
+        }
+      }
+    },
+
+    {
+      "country": "France",
+      "iso": "FRA",
+      "flag": "🇫🇷",
+      "sources": ["https://france-visas.gouv.fr/"],
+      "visas": {
+        "visitor": {
+          "description": "Schengen short-stay (Type C) for short trips; many nationalities need a Schengen visa for stays up to 90 days.",
+          "documents": [
+            "Valid passport",
+            "Schengen visa application + photo",
+            "Travel medical insurance",
+            "Proof of accommodation",
+            "Round-trip reservation",
+            "Proof of funds"
+          ],
+          "processingTime": "Typically ~15 calendar days (can vary)",
+          "cost": "€80 (standard short-stay, subject to exceptions)",
+          "financialRequirement": "Reference daily amounts (varies by consulate)",
+          "notes": "EU/EEA citizens do not require a visa; citizens of some countries have visa-exemption."
+        },
+        "student": {
+          "description": "Long-stay student visa (VLS-TS) generally required for study longer than 90 days.",
+          "documents": [
+            "Valid passport",
+            "Acceptance from French institution",
+            "Proof of financial means",
+            "Health insurance",
+            "Proof of accommodation"
+          ],
+          "processingTime": "Several weeks (varies by consulate and nationality)",
+          "cost": "≈ €99 (varies by visa type)",
+          "financialRequirement": "Guideline amounts (e.g., ~€615/month), verify with Campus France",
+          "notes": "Campus France procedure often required for certain nationalities."
+        },
+        "work": {
+          "description": "Long-stay work visa required for employment in France; employer obligations apply.",
+          "documents": [
+            "Valid passport",
+            "Employment contract",
+            "Proof of qualifications",
+            "Completed visa application"
+          ],
+          "processingTime": "Several weeks to months",
+          "cost": "Varies (~€99 typical long-stay)",
+          "financialRequirement": "Sufficient means per contract",
+          "notes": "Some permits require prior approval from French authorities."
+        }
+      },
+      "nationalityAdjustments": {
+        "France": {
+          "visitor": {
+            "description": "French citizens do not require a visa to enter France.",
+            "processingTime": "N/A",
+            "cost": "N/A",
+            "notes": "You are a citizen of this country."
+          }
+        },
+        "Algeria": {
+          "visitor": {
+            "description": "Schengen visa required for Algerian passport holders.",
+            "processingTime": "Usually ~15 days (can vary)",
+            "cost": "€80",
+            "notes": "Additional paperwork often requested (invitation, proof of funds)."
+          }
+        },
+        "Tunisia": {
+          "visitor": {
+            "description": "Schengen visa required for Tunisian passport holders (short-stay).",
+            "processingTime": "Typically ~15 days",
+            "cost": "€80",
+            "notes": "Verify local consulate requirements."
+          }
+        },
+        "Morocco": {
+          "visitor": {
+            "description": "Schengen visa required for Moroccan passport holders (short-stay).",
+            "processingTime": "Typically ~15 days",
+            "cost": "€80",
+            "notes": "Verify local consulate requirements."
+          }
+        }
+      }
+    },
+
+    {
+      "country": "Japan",
+      "iso": "JPN",
+      "flag": "🇯🇵",
+      "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"],
+      "visas": {
+        "visitor": {
+          "description": "Visitor visa required for many nationalities; some passports (e.g., EU) are visa-exempt for short stays.",
+          "documents": [
+            "Valid passport",
+            "Visa application + photo (if required)",
+            "Travel itinerary",
+            "Proof of funds",
+            "Accommodation details or invitation"
+          ],
+          "processingTime": "Varies; often 5–10 business days (when needed)",
+          "cost": "Varies by nationality and consulate (example ~¥3,000 for single-entry in some cases)",
+          "financialRequirement": "Sufficient funds for intended stay",
+          "notes": "Visa exemption applies to specific nationalities (e.g., many EU passports)."
+        },
+        "student": {
+          "description": "Student visa required with Certificate of Eligibility (CoE).",
+          "documents": [
+            "Valid passport",
+            "Certificate of Eligibility (CoE)",
+            "Acceptance letter",
+            "Proof of funds"
+          ],
+          "processingTime": "1–2 months after CoE",
+          "cost": "Approx. ¥4,000 (varies)",
+          "financialRequirement": "Proof of tuition and living funds",
+          "notes": "Work (part-time) rules vary by status."
+        },
+        "work": {
+          "description": "Work visa required; Certificate of Eligibility typically needed.",
+          "documents": [
+            "Valid passport",
+            "Certificate of Eligibility (CoE)",
+            "Employment contract",
+            "Proof of qualifications"
+          ],
+          "processingTime": "1–3 months after CoE",
+          "cost": "Varies (~¥4,000 typical)",
+          "financialRequirement": "Proof of employment income",
+          "notes": "Different categories (Engineer, Skilled Labour, etc.) have specific rules."
+        }
+      },
+      "nationalityAdjustments": {
+        "France": {
+          "visitor": {
+            "description": "French citizens are generally visa-exempt for short tourist stays (e.g., up to 90 days).",
+            "processingTime": "N/A (visa-exempt)",
+            "cost": "N/A",
+            "notes": "Confirm entry conditions at port of entry."
+          }
+        },
+        "Algeria": {
+          "visitor": {
+            "description": "Visitor visa required for Algerian passport holders.",
+            "processingTime": "Varies; consular processing ~5–10 business days",
+            "cost": "Approx. ¥3,000 (varies)",
+            "notes": "Local embassy/consulate may request extra documents."
+          }
+        },
+        "Tunisia": {
+          "visitor": {
+            "description": "Visitor visa generally required.",
+            "processingTime": "Varies",
+            "cost": "Approx. ¥3,000 (varies)",
+            "notes": "Check local Japanese diplomatic mission for current rules."
+          }
+        },
+        "Morocco": {
+          "visitor": {
+            "description": "Visitor visa generally required for Moroccan passport holders (verify exemptions).",
+            "processingTime": "Varies",
+            "cost": "Approx. ¥3,000 (varies)",
+            "notes": "Check local consulate for up-to-date procedures."
+          }
+        }
+      }
+    },
+
+    {
+      "country": "Morocco",
+      "iso": "MAR",
+      "flag": "🇲🇦",
+      "sources": ["https://www.consulat.ma/en/visa"],
+      "visas": {
+        "visitor": {
+          "description": "Visitor/short-stay rules depend on nationality; many European passports are visa-exempt, others require visa.",
+          "documents": [
+            "Valid passport",
+            "Proof of accommodation",
+            "Return ticket",
+            "Proof of funds"
+          ],
+          "processingTime": "Varies",
+          "cost": "Varies by nationality",
+          "financialRequirement": "Sufficient funds for stay",
+          "notes": "Check Moroccan consular guidance by nationality."
+        },
+        "student": {
+          "description": "Student visa / residency permit required for studies longer than short stay.",
+          "documents": ["Valid passport", "Enrollment proof", "Proof of funds"],
+          "processingTime": "Varies",
+          "cost": "Varies",
+          "financialRequirement": "Sufficient funds for tuition & living",
+          "notes": "Local embassy/consulate provides exact list."
+        },
+        "work": {
+          "description": "Work visa / permit required for employment in Morocco.",
+          "documents": [
+            "Valid passport",
+            "Employment contract",
+            "Work authorization / permit"
+          ],
+          "processingTime": "Varies",
+          "cost": "Varies",
+          "financialRequirement": "Proof of means per contract",
+          "notes": "Employer must usually start administrative process locally."
+        }
+      },
+      "nationalityAdjustments": {
+        "France": {
+          "visitor": {
+            "description": "French citizens often enjoy visa-free short stays (check latest bilateral rules).",
+            "processingTime": "N/A",
+            "cost": "N/A",
+            "notes": "No visa for many short stays, verify for passport type."
+          }
+        },
+        "Algeria": {
+          "visitor": {
+            "description": "Visa rules depend on diplomatic agreements; check consulate.",
+            "processingTime": "Varies",
+            "cost": "Varies",
+            "notes": "Confirm with Moroccan diplomatic mission."
+          }
+        },
+        "Tunisia": {
+          "visitor": {
+            "description": "Check consular guidance for Tunisian passport holders.",
+            "processingTime": "Varies",
+            "cost": "Varies"
+          }
+        },
+        "Morocco": {
+          "visitor": {
+            "description": "Citizens of Morocco do not require visa to visit Morocco.",
+            "processingTime": "N/A",
+            "cost": "N/A",
+            "notes": "You are a citizen of this country."
+          }
+        }
+      }
+    },
+
+    {
+      "country": "Tunisia",
+      "iso": "TUN",
+      "flag": "🇹🇳",
+      "sources": ["https://www.diplomatie.gov.tn/"],
+      "visas": {
+        "visitor": {
+          "description": "Visitor rules vary; many nationals require a visa while some are exempt.",
+          "documents": [
+            "Valid passport",
+            "Invitation/accommodation proof",
+            "Return ticket",
+            "Proof of funds"
+          ],
+          "processingTime": "Varies",
+          "cost": "Varies",
+          "financialRequirement": "Sufficient funds for stay",
+          "notes": "Refer to Tunisian consulate per nationality."
+        },
+        "student": {
+          "description": "Student authorization/visa usually required for long-term study.",
+          "documents": [
+            "Valid passport",
+            "Acceptance letter",
+            "Proof of funds"
+          ],
+          "processingTime": "Varies",
+          "cost": "Varies",
+          "notes": "Local procedures apply."
+        },
+        "work": {
+          "description": "Work permit required for employment in Tunisia.",
+          "documents": [
+            "Valid passport",
+            "Work contract",
+            "Work authorization"
+          ],
+          "processingTime": "Varies",
+          "cost": "Varies",
+          "notes": "Employer-driven procedures are common."
+        }
+      },
+      "nationalityAdjustments": {
+        "France": {
+          "visitor": {
+            "description": "Some passport holders (e.g., French) may enjoy visa-exempt entry for short stays — verify latest rules.",
+            "processingTime": "N/A (if visa-exempt)",
+            "cost": "N/A"
+          }
+        },
+        "Algeria": {
+          "visitor": {
+            "description": "Visa rules depend on bilateral agreements; verify with authorities.",
+            "processingTime": "Varies",
+            "cost": "Varies"
+          }
+        },
+        "Tunisia": {
+          "visitor": {
+            "description": "Citizens of Tunisia do not require visa to enter Tunisia.",
+            "processingTime": "N/A",
+            "cost": "N/A"
+          }
+        },
+        "Morocco": {
+          "visitor": {
+            "description": "Check Tunisian consular guidance for Moroccan passport holders.",
+            "processingTime": "Varies",
+            "cost": "Varies"
+          }
+        }
+      }
+    }
+  ]
+}

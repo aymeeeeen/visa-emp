@@ -4,19 +4,16 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Search from './pages/Search';
-import CountryDetail from './pages/CountryDetail';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar /> {/* Navbar visible on all pages */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-        {/* New route for country details */}
-        <Route path="/country/:countryName" element={<CountryDetail />} />
+        <Route path="/" element={<Home />} /> {/* Home page */}
+        <Route path="/search" element={<Search />} /> {/* Search page */}
       </Routes>
-      <Footer />
+      <Footer /> {/* Footer visible on all pages */}
     </Router>
   );
 }

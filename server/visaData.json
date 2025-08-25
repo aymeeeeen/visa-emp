@@ -1,0 +1,638 @@
+{
+  "countriesIndex": [
+    {
+      "country": "Canada",
+      "flag": "🇨🇦",
+      "requirement": "Visitor / Student / Work (IRCC)",
+      "sources": [
+        "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+        "https://ircc.canada.ca/english/services/processing-times.html",
+        "https://ircc.canada.ca/english/information/fees/fees.asp",
+        "https://ircc.canada.ca/english/information/fees/result.asp?lob=biometrics",
+        "https://ircc.canada.ca/english/visit/visas.asp"
+      ]
+    },
+    {
+      "country": "France",
+      "flag": "🇫🇷",
+      "requirement": "Schengen short-stay + long-stay (study/work)",
+      "sources": [
+        "https://france-visas.gouv.fr/",
+        "https://france-visas.gouv.fr/en/web/france-visas/les-tarifs",
+        "https://www.mfa.gov.lv/en/short-term-schengen-visa"
+      ]
+    },
+    {
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "requirement": "Visitor / Student / Work (MOFA)",
+      "sources": [
+        "https://www.mofa.go.jp/j_info/visit/visa/",
+        "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+        "https://www.ma.emb-japan.go.jp/",
+        "https://www.tn.emb-japan.go.jp/"
+      ]
+    }
+  ],
+  "rulesByNationality": {
+    "France": {
+      "Canada": {
+        "visitor": {
+          "description": "Visa-exempt for short visits; eTA required when arriving by air.",
+          "documents": [
+            "Valid French passport",
+            "eTA approval (for air travel)",
+            "Return or onward ticket",
+            "Proof of funds (if requested)",
+            "Accommodation details (if requested)"
+          ],
+          "processingTime": "eTA usually instant; can take up to 72 hours.",
+          "cost": "eTA: CAD 7.",
+          "financialRequirement": "No fixed minimum; show means to cover trip duration.",
+          "notes": "Stays usually up to 6 months; longer stays or work/study need appropriate permits.",
+          "sources": [
+            "https://www.cic.gc.ca/english/helpcentre/answer.asp?qnum=064&top=3",
+            "https://ircc.canada.ca/english/services/processing-times.html"
+          ]
+        },
+        "student": {
+          "description": "Study permit required for programs longer than short-term courses.",
+          "documents": [
+            "Valid passport",
+            "Letter of acceptance from a DLI",
+            "Proof of funds (tuition + living, per IRCC)",
+            "Completed forms",
+            "Biometrics/medical (if required)"
+          ],
+          "processingTime": "Typical outside-Canada decision ~6–12 weeks (≈42–84 days); check IRCC tool for your office.",
+          "cost": "Study permit: CAD 150; Biometrics (if required): CAD 85/person (family max CAD 170).",
+          "financialRequirement": "Funds covering tuition + living (province/family-size dependent).",
+          "notes": "TRV or eTA generally issued automatically with an approved study permit.",
+          "sources": [
+            "https://ircc.canada.ca/english/study/study.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "work": {
+          "description": "Work permit required (employer-specific or open, category-dependent).",
+          "documents": [
+            "Valid passport",
+            "Job offer/contract (if employer-specific)",
+            "LMIA or LMIA-exempt proof (if applicable)",
+            "Proof of qualifications/experience",
+            "Completed forms",
+            "Biometrics/medical (if required)"
+          ],
+          "processingTime": "Typical outside-Canada range ~8–16 weeks (≈56–112 days); check IRCC tool.",
+          "cost": "Work permit: CAD 155; Open work-permit holder fee (if applicable): +CAD 100; Biometrics (if required): CAD 85/person.",
+          "financialRequirement": "Proof you can support yourself until you receive income.",
+          "notes": "IEC and other categories have specific caps and timelines; employer steps may be required inside Canada.",
+          "sources": [
+            "https://ircc.canada.ca/english/work/permit.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        }
+      },
+      "Japan": {
+        "visitor": {
+          "description": "Visa-exempt for tourism/business up to 90 days for French nationals.",
+          "documents": [
+            "Valid French passport",
+            "Return/onward ticket (recommended)",
+            "Proof of funds/accommodation (may be requested)"
+          ],
+          "processingTime": "None (visa-exempt entry).",
+          "cost": "Free (no visa fee for visa-exempt entry).",
+          "financialRequirement": "No fixed threshold; cover daily expenses.",
+          "notes": "Length and activities are determined by border control at entry.",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+            "https://www.mofa.go.jp/j_info/visit/visa/"
+          ]
+        },
+        "student": {
+          "description": "Student visa required; Certificate of Eligibility (CoE) from Japan generally required.",
+          "documents": [
+            "Valid passport",
+            "Certificate of Eligibility (CoE)",
+            "School acceptance/enrolment letter",
+            "Proof of funds (tuition + living)",
+            "Application form + ID photos"
+          ],
+          "processingTime": "Consulate issuance ~5 working days after acceptance; CoE issuance in Japan typically ~1–2 months.",
+          "cost": "Visa fee varies by nationality; single-entry commonly ~JPY 3,000.",
+          "financialRequirement": "Funds to cover tuition + living (bank statements/sponsor).",
+          "notes": "Part-time work requires separate permission (資格外活動許可).",
+          "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"]
+        },
+        "work": {
+          "description": "Work visa required; most categories require CoE from Japanese employer/sponsor.",
+          "documents": [
+            "Valid passport",
+            "Certificate of Eligibility (CoE)",
+            "Employment contract/offer",
+            "Proof of qualifications/experience",
+            "Application form + ID photos"
+          ],
+          "processingTime": "Consulate issuance ~5 working days; CoE issuance usually ~1–3 months.",
+          "cost": "Visa fee varies by nationality; single-entry often ~JPY 3,000.",
+          "financialRequirement": "Employment income/means of support.",
+          "notes": "Category-specific criteria (e.g., Engineer/Specialist in Humanities/International Services, Highly Skilled).",
+          "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"]
+        }
+      }
+    },
+    "Algeria": {
+      "Canada": {
+        "visitor": {
+          "description": "Temporary Resident Visa (TRV) required to visit Canada.",
+          "documents": [
+            "Valid passport",
+            "IRCC application forms",
+            "Biometrics at VAC (if required)",
+            "Proof of funds and ties to Algeria",
+            "Travel itinerary or invitation (if applicable)"
+          ],
+          "processingTime": "Typical outside-Canada decision ~20–60 days; check IRCC tool for your visa office.",
+          "cost": "TRV: CAD 100/person (family cap CAD 500); Biometrics: CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Show funds to cover trip (often ≈CAD 1,000 per month of stay + travel costs).",
+          "notes": "IRCC/VAC may request additional documents or an interview; medical exam may be required in some cases.",
+          "sources": [
+            "https://ircc.canada.ca/english/visit/visas.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp",
+            "https://ircc.canada.ca/english/information/fees/result.asp?lob=biometrics"
+          ]
+        },
+        "student": {
+          "description": "Study permit required for programs beyond short-term study.",
+          "documents": [
+            "Valid passport",
+            "Letter of acceptance from DLI",
+            "Proof of funds (tuition + living)",
+            "Completed forms",
+            "Biometrics/medical (if required)"
+          ],
+          "processingTime": "Commonly ~6–12+ weeks (≈42–90 days); check IRCC tool by country/office.",
+          "cost": "Study permit: CAD 150; Biometrics (if required): CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Funds per IRCC (tuition + living for student and any family members).",
+          "notes": "TRV is usually issued automatically when the permit is approved for visa-required nationals.",
+          "sources": [
+            "https://ircc.canada.ca/english/study/study.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "work": {
+          "description": "Work permit required (employer-specific or open, depending on program).",
+          "documents": [
+            "Valid passport",
+            "Job offer/contract",
+            "LMIA or exemption proof (if applicable)",
+            "Proof of qualifications",
+            "Forms; biometrics/medical (if required)"
+          ],
+          "processingTime": "Usually ~8–16+ weeks (≈56–120 days) depending on category/office; check IRCC tool.",
+          "cost": "Work permit: CAD 155; Open work-permit holder fee (if applicable): +CAD 100; Biometrics: CAD 85/person.",
+          "financialRequirement": "Ability to support yourself until first pay; program-specific proofs may apply.",
+          "notes": "IEC and other pathways have separate quotas and timelines.",
+          "sources": [
+            "https://ircc.canada.ca/english/work/permit.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        }
+      },
+      "France": {
+        "visitor": {
+          "description": "Schengen short-stay (Type C) visa required.",
+          "documents": [
+            "Valid passport",
+            "Schengen application + photo",
+            "Travel medical insurance (min €30,000 coverage)",
+            "Proof of accommodation (hotel booking or invitation)",
+            "Round-trip reservation",
+            "Proof of sufficient funds (bank statements, etc.)"
+          ],
+          "processingTime": "Standard 15 calendar days; may extend up to 45 days.",
+          "cost": "Adults: €90; Children 6–11: €45; Under 6: free; VFS/TLS service fees may apply.",
+          "financialRequirement": "Reference ~€65/day (with hotel) to ~€120/day (without pre-paid lodging/invitation).",
+          "notes": "Apply via France-Visas/TLS; additional documents or interview may be requested.",
+          "sources": [
+            "https://france-visas.gouv.fr/",
+            "https://france-visas.gouv.fr/en/web/france-visas/les-tarifs",
+            "https://www.mfa.gov.lv/en/short-term-schengen-visa"
+          ]
+        },
+        "student": {
+          "description": "Long-stay student visa (VLS-TS) required.",
+          "documents": [
+            "Valid passport",
+            "Acceptance/enrolment letter",
+            "Proof of accommodation",
+            "Proof of financial means",
+            "Health insurance"
+          ],
+          "processingTime": "Typically ~4–8+ weeks; may vary by season/consulate.",
+          "cost": "Long-stay fee commonly ~€99 (check consulate).",
+          "financialRequirement": "Guideline ≈€615/month for living costs.",
+          "notes": "Campus France procedure usually required before visa submission.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        },
+        "work": {
+          "description": "Long-stay work visa required; employer must complete work authorization steps.",
+          "documents": [
+            "Valid passport",
+            "Work contract/work authorization",
+            "Proof of qualifications/experience",
+            "Proof of accommodation/means"
+          ],
+          "processingTime": "Several weeks to a few months depending on formalities.",
+          "cost": "Long-stay fee commonly ~€99.",
+          "financialRequirement": "Income/means as per contract and French regulations.",
+          "notes": "Employer in France coordinates with authorities for authorization prior to visa.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        }
+      },
+      "Japan": {
+        "visitor": {
+          "description": "Visitor visa required for Algerian citizens.",
+          "documents": [
+            "Valid passport",
+            "Visa application + photo",
+            "Itinerary/travel plan",
+            "Proof of funds",
+            "Accommodation booking or invitation"
+          ],
+          "processingTime": "In principle ~5 working days (≈1 week) after application is accepted; can be longer if checks are needed.",
+          "cost": "Single-entry typically ~JPY 3,000 (consulate confirms exact fee).",
+          "financialRequirement": "Proof of funds sufficient for stay.",
+          "notes": "Apply at the Embassy of Japan in Algiers (requirements may vary).",
+          "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"]
+        },
+        "student": {
+          "description": "Student visa; CoE required.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Acceptance/enrolment letter",
+            "Proof of funds",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE issuance ~1–2 months in Japan.",
+          "cost": "Visa fee varies by nationality; single-entry around JPY 3,000.",
+          "financialRequirement": "Funds for tuition + living costs.",
+          "notes": "Part-time work allowed with permission.",
+          "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"]
+        },
+        "work": {
+          "description": "Work visa; CoE usually required.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Employment contract",
+            "Proof of qualifications",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE issuance commonly ~1–3 months.",
+          "cost": "Visa fee varies by nationality; consulate confirms.",
+          "financialRequirement": "Employment income / means of support.",
+          "notes": "Category-specific requirements apply.",
+          "sources": ["https://www.mofa.go.jp/j_info/visit/visa/"]
+        }
+      }
+    },
+    "Morocco": {
+      "Canada": {
+        "visitor": {
+          "description": "Temporary Resident Visa (TRV) required.",
+          "documents": [
+            "Valid passport",
+            "IRCC forms",
+            "Biometrics at VAC (if required)",
+            "Proof of funds & ties to Morocco",
+            "Itinerary/invitation (if applicable)"
+          ],
+          "processingTime": "Typical outside-Canada decision ~20–60 days; check IRCC tool by office.",
+          "cost": "TRV: CAD 100/person (family cap CAD 500); Biometrics: CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Show funds for stay (often ≈CAD 1,000 per month + travel costs).",
+          "notes": "Additional documents or interview may be requested by IRCC/VAC.",
+          "sources": [
+            "https://ircc.canada.ca/english/visit/visas.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "student": {
+          "description": "Study permit required for programs longer than short-term study.",
+          "documents": [
+            "Passport",
+            "Letter of acceptance from DLI",
+            "Proof of funds (tuition + living)",
+            "Forms; biometrics/medical (if required)"
+          ],
+          "processingTime": "Common range ~6–12 weeks (≈42–84 days); verify with IRCC tool.",
+          "cost": "Study permit: CAD 150; Biometrics (if required): CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Funds per IRCC for tuition & living (varies by province/family).",
+          "notes": "TRV generally issued automatically upon approval for visa-required nationals.",
+          "sources": [
+            "https://ircc.canada.ca/english/study/study.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "work": {
+          "description": "Work permit required; category determines docs/timelines.",
+          "documents": [
+            "Passport",
+            "Job offer / LMIA or exemption (if required)",
+            "Proof of qualifications",
+            "Forms; biometrics/medical (if required)"
+          ],
+          "processingTime": "Often ~8–16+ weeks (≈56–120 days) depending on office/program; check IRCC tool.",
+          "cost": "Work permit: CAD 155; Open work-permit holder fee (if applicable): +CAD 100; Biometrics: CAD 85/person.",
+          "financialRequirement": "Show ability to support yourself initially.",
+          "notes": "IEC/spousal/open permits have program-specific rules.",
+          "sources": [
+            "https://ircc.canada.ca/english/work/permit.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        }
+      },
+      "France": {
+        "visitor": {
+          "description": "Schengen short-stay (Type C) visa required.",
+          "documents": [
+            "Valid passport",
+            "Schengen application + photo",
+            "Travel insurance (≥ €30,000 coverage)",
+            "Proof of accommodation (hotel or invitation)",
+            "Round-trip reservation",
+            "Proof of funds (bank statements, employer letter, etc.)"
+          ],
+          "processingTime": "Decision normally within 15 calendar days; may extend to 45 days.",
+          "cost": "Adults: €90; Children 6–11: €45; Under 6: free; external center service fees may apply.",
+          "financialRequirement": "Typical reference ~€65/day (with lodging) up to ~€120/day (without).",
+          "notes": "Apply through France-Visas/TLScontact Morocco; extra documents may be requested.",
+          "sources": [
+            "https://france-visas.gouv.fr/",
+            "https://france-visas.gouv.fr/en/web/france-visas/les-tarifs",
+            "https://www.mfa.gov.lv/en/short-term-schengen-visa"
+          ]
+        },
+        "student": {
+          "description": "Long-stay student visa (VLS-TS) required.",
+          "documents": [
+            "Passport",
+            "Acceptance/enrolment letter",
+            "Proof of accommodation",
+            "Proof of financial means",
+            "Health insurance"
+          ],
+          "processingTime": "Commonly ~4–8+ weeks (seasonal variation).",
+          "cost": "Long-stay fee commonly ~€99.",
+          "financialRequirement": "Guideline ≈€615/month for living costs.",
+          "notes": "Campus France process usually required before visa.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        },
+        "work": {
+          "description": "Long-stay work visa required; employer authorization steps apply.",
+          "documents": [
+            "Passport",
+            "Work contract/work authorization",
+            "Proof of qualifications/experience",
+            "Accommodation/means of support"
+          ],
+          "processingTime": "Several weeks to months depending on formalities.",
+          "cost": "Long-stay fee commonly ~€99.",
+          "financialRequirement": "Income per contract / sufficient means.",
+          "notes": "Employer in France coordinates with authorities pre-visa.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        }
+      },
+      "Japan": {
+        "visitor": {
+          "description": "Visitor visa required for Moroccan citizens.",
+          "documents": [
+            "Passport",
+            "Visa application + photo",
+            "Itinerary/travel plan",
+            "Proof of funds",
+            "Accommodation booking or invitation"
+          ],
+          "processingTime": "In principle ~5 working days after acceptance; may be longer if checks are needed.",
+          "cost": "Single-entry commonly ~JPY 3,000 (embassy confirms).",
+          "financialRequirement": "Sufficient funds for intended stay.",
+          "notes": "Apply via Embassy of Japan in Rabat; additional documents may be requested.",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/",
+            "https://www.ma.emb-japan.go.jp/"
+          ]
+        },
+        "student": {
+          "description": "Student visa with CoE required.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Acceptance/enrolment letter",
+            "Proof of funds",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE issuance ~1–2 months in Japan.",
+          "cost": "Visa fee varies by nationality; single-entry ~JPY 3,000.",
+          "financialRequirement": "Tuition + living costs coverage.",
+          "notes": "Part-time work requires separate permission.",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/",
+            "https://www.ma.emb-japan.go.jp/"
+          ]
+        },
+        "work": {
+          "description": "Work visa; CoE generally required.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Employment contract",
+            "Proof of qualifications",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE ~1–3 months depending on case.",
+          "cost": "Visa fee varies by nationality; confirm with embassy.",
+          "financialRequirement": "Employment income / means of support.",
+          "notes": "Category-specific rules apply (Engineer/Specialist etc.).",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/",
+            "https://www.ma.emb-japan.go.jp/"
+          ]
+        }
+      }
+    },
+    "Tunisia": {
+      "Canada": {
+        "visitor": {
+          "description": "Temporary Resident Visa (TRV) required.",
+          "documents": [
+            "Valid passport",
+            "IRCC application forms",
+            "Biometrics at VAC (if required)",
+            "Proof of funds & ties to Tunisia",
+            "Travel itinerary/invitation (if applicable)"
+          ],
+          "processingTime": "Typical outside-Canada decision ~20–60 days; verify with IRCC tool.",
+          "cost": "TRV: CAD 100/person (family cap CAD 500); Biometrics: CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Show funds for stay (often ≈CAD 1,000 per month + travel).",
+          "notes": "Extra documents or interview may be requested; medicals may be required.",
+          "sources": [
+            "https://ircc.canada.ca/english/visit/visas.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "student": {
+          "description": "Study permit required for long programs; TRV/eTA issued as applicable.",
+          "documents": [
+            "Passport",
+            "Letter of acceptance (DLI)",
+            "Proof of funds (tuition + living)",
+            "Forms; biometrics/medical (if required)"
+          ],
+          "processingTime": "Commonly ~6–12 weeks (≈42–84 days); confirm in IRCC tool.",
+          "cost": "Study permit: CAD 150; Biometrics (if required): CAD 85/person (family cap CAD 170).",
+          "financialRequirement": "Proof per IRCC (tuition + living; depends on province/family).",
+          "notes": "TRV typically issued automatically upon permit approval for visa-required nationals.",
+          "sources": [
+            "https://ircc.canada.ca/english/study/study.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        },
+        "work": {
+          "description": "Work permit required; category determines documents and timelines.",
+          "documents": [
+            "Passport",
+            "Job offer / LMIA or exemption (if required)",
+            "Proof of qualifications",
+            "Forms; biometrics/medical (if required)"
+          ],
+          "processingTime": "Often ~8–16+ weeks (≈56–120 days) depending on office/category; see IRCC tool.",
+          "cost": "Work permit: CAD 155; Open work-permit holder fee (if applicable): +CAD 100; Biometrics: CAD 85/person.",
+          "financialRequirement": "Show capacity to support yourself until you receive income.",
+          "notes": "Program-specific rules apply (e.g., spousal open work permits, IEC).",
+          "sources": [
+            "https://ircc.canada.ca/english/work/permit.asp",
+            "https://ircc.canada.ca/english/services/processing-times.html",
+            "https://ircc.canada.ca/english/information/fees/fees.asp"
+          ]
+        }
+      },
+      "France": {
+        "visitor": {
+          "description": "Schengen short-stay (Type C) visa required.",
+          "documents": [
+            "Valid passport",
+            "Schengen application + photo",
+            "Travel medical insurance (≥ €30,000 coverage)",
+            "Proof of accommodation",
+            "Round-trip reservation",
+            "Proof of funds"
+          ],
+          "processingTime": "Normally 15 calendar days; can extend to 45 days.",
+          "cost": "Adults: €90; Children 6–11: €45; Under 6: free; external service fees may apply.",
+          "financialRequirement": "Common reference ~€65–€120/day depending on lodging/support.",
+          "notes": "Apply via France-Visas; consulate may request additional documents.",
+          "sources": [
+            "https://france-visas.gouv.fr/",
+            "https://france-visas.gouv.fr/en/web/france-visas/les-tarifs",
+            "https://www.mfa.gov.lv/en/short-term-schengen-visa"
+          ]
+        },
+        "student": {
+          "description": "Long-stay student visa (VLS-TS) required.",
+          "documents": [
+            "Passport",
+            "Acceptance/enrolment letter",
+            "Proof of accommodation",
+            "Proof of financial means",
+            "Health insurance"
+          ],
+          "processingTime": "Typically ~4–8+ weeks (season/volume dependent).",
+          "cost": "Long-stay fee commonly ~€99.",
+          "financialRequirement": "Guideline ≈€615/month for living costs.",
+          "notes": "Campus France procedure generally required first.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        },
+        "work": {
+          "description": "Long-stay work visa required; employer authorization steps apply.",
+          "documents": [
+            "Passport",
+            "Work contract/authorization",
+            "Proof of qualifications/experience",
+            "Accommodation/means of support"
+          ],
+          "processingTime": "Several weeks to a few months (case-dependent).",
+          "cost": "Long-stay fee commonly ~€99.",
+          "financialRequirement": "Income/means per contract and French rules.",
+          "notes": "Employer in France coordinates authorization prior to visa application.",
+          "sources": ["https://france-visas.gouv.fr/"]
+        }
+      },
+      "Japan": {
+        "visitor": {
+          "description": "Visa-exempt for short stays (typically up to 90 days) for Tunisian passport holders.",
+          "documents": [
+            "Valid Tunisian passport",
+            "Return/onward ticket (recommended)",
+            "Proof of funds/accommodation (may be requested)"
+          ],
+          "processingTime": "None (visa-exempt entry). If a visa is needed for another purpose, consulate issuance is typically ~5 working days.",
+          "cost": "Free for visa-exempt entry.",
+          "financialRequirement": "Funds to cover stay (no fixed threshold).",
+          "notes": "Entry conditions/duration determined by border control on arrival.",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+            "https://www.tn.emb-japan.go.jp/"
+          ]
+        },
+        "student": {
+          "description": "Student visa required for long-term study; CoE generally required.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Acceptance/enrolment letter",
+            "Proof of funds",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE issuance typically ~1–2 months.",
+          "cost": "Visa fee varies by nationality; single-entry around JPY 3,000.",
+          "financialRequirement": "Funds for tuition + living costs.",
+          "notes": "Part-time work requires separate permission.",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/",
+            "https://www.tn.emb-japan.go.jp/"
+          ]
+        },
+        "work": {
+          "description": "Work visa required; CoE usually necessary from Japanese employer/sponsor.",
+          "documents": [
+            "Passport",
+            "Certificate of Eligibility (CoE)",
+            "Employment contract",
+            "Proof of qualifications",
+            "Application form + photo"
+          ],
+          "processingTime": "Consulate ~5 working days; CoE issuance commonly ~1–3 months.",
+          "cost": "Visa fee varies by nationality (consulate confirms).",
+          "financialRequirement": "Employment income / sufficient means.",
+          "notes": "Category-dependent rules (Engineer/Specialist, etc.).",
+          "sources": [
+            "https://www.mofa.go.jp/j_info/visit/visa/",
+            "https://www.tn.emb-japan.go.jp/"
+          ]
+        }
+      }
+    }
+  }
+}
